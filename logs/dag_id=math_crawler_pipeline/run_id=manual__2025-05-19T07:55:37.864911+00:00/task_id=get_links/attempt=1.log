@@ -1,0 +1,24 @@
+[2025-05-19T07:55:39.432+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:55:37.864911+00:00 [queued]>
+[2025-05-19T07:55:39.440+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:55:37.864911+00:00 [queued]>
+[2025-05-19T07:55:39.440+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T07:55:39.440+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T07:55:39.440+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T07:55:39.449+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_links> on 2025-05-19 07:55:37.864911+00:00
+[2025-05-19T07:55:39.454+0000] {standard_task_runner.py:55} INFO - Started process 881 to run task
+[2025-05-19T07:55:39.458+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'get_links', 'manual__2025-05-19T07:55:37.864911+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpji01mef5']
+[2025-05-19T07:55:39.461+0000] {standard_task_runner.py:83} INFO - Job 7: Subtask get_links
+[2025-05-19T07:55:39.512+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:55:37.864911+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T07:55:39.562+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=get_links
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T07:55:37.864911+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T07:55:37.864911+00:00
+[2025-05-19T07:55:39.815+0000] {MathDag.py:30} INFO - Found 0 links
+[2025-05-19T07:55:39.828+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T07:55:39.835+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=get_links, execution_date=20250519T075537, start_date=20250519T075539, end_date=20250519T075539
+[2025-05-19T07:55:39.882+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T07:55:39.899+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

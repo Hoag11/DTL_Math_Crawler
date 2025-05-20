@@ -1,0 +1,24 @@
+[2025-05-19T08:34:35.487+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T08:34:27.706257+00:00 [queued]>
+[2025-05-19T08:34:35.496+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T08:34:27.706257+00:00 [queued]>
+[2025-05-19T08:34:35.496+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:34:35.497+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T08:34:35.497+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:34:35.512+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): generate_pdf> on 2025-05-19 08:34:27.706257+00:00
+[2025-05-19T08:34:35.517+0000] {standard_task_runner.py:55} INFO - Started process 1943 to run task
+[2025-05-19T08:34:35.522+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'generate_pdf', 'manual__2025-05-19T08:34:27.706257+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpm64xzl5l']
+[2025-05-19T08:34:35.525+0000] {standard_task_runner.py:83} INFO - Job 33: Subtask generate_pdf
+[2025-05-19T08:34:35.590+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T08:34:27.706257+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T08:34:35.670+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=generate_pdf
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T08:34:27.706257+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T08:34:27.706257+00:00
+[2025-05-19T08:34:35.699+0000] {MathDag.py:80} WARNING - Không có nội dung nào để xuất PDF!
+[2025-05-19T08:34:35.702+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T08:34:35.713+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=generate_pdf, execution_date=20250519T083427, start_date=20250519T083435, end_date=20250519T083435
+[2025-05-19T08:34:35.742+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T08:34:35.756+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,88 @@
+[2025-05-19T08:23:38.832+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T08:23:37.365112+00:00 [queued]>
+[2025-05-19T08:23:38.840+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T08:23:37.365112+00:00 [queued]>
+[2025-05-19T08:23:38.840+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:23:38.840+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T08:23:38.841+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:23:38.850+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_links> on 2025-05-19 08:23:37.365112+00:00
+[2025-05-19T08:23:38.856+0000] {standard_task_runner.py:55} INFO - Started process 1657 to run task
+[2025-05-19T08:23:38.859+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'get_links', 'manual__2025-05-19T08:23:37.365112+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmphw1dqqni']
+[2025-05-19T08:23:38.862+0000] {standard_task_runner.py:83} INFO - Job 27: Subtask get_links
+[2025-05-19T08:23:38.913+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T08:23:37.365112+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T08:23:38.965+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=get_links
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T08:23:37.365112+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T08:23:37.365112+00:00
+[2025-05-19T08:23:39.228+0000] {MathDag.py:30} INFO - Số lượng link lấy được: 64
+[2025-05-19T08:23:39.228+0000] {MathDag.py:32} INFO - Link 1: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-a179519.html
+[2025-05-19T08:23:39.228+0000] {MathDag.py:32} INFO - Link 2: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-2-a179539.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 3: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-3-a181097.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 4: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-4-a181870.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 5: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-5-a182059.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 6: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-6-a182290.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 7: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-7-a182562.html
+[2025-05-19T08:23:39.229+0000] {MathDag.py:32} INFO - Link 8: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-8-a183073.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 9: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-9-a183564.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 10: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-10-a183809.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 11: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-11-a184285.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 12: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-tp-ho-chi-minh-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-1-a179544.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 13: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-2-a181829.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 14: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-3-a181884.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 15: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-4-a181981.html
+[2025-05-19T08:23:39.230+0000] {MathDag.py:32} INFO - Link 16: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-5-a182269.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 17: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-6-a182568.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 18: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-7-a182986.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 19: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-8-a183544.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 20: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-9-a184122.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 21: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-10-a184527.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 22: https://loigiaihay.com/de-so-1-de-thi-vao-lop-10-mon-toan-c44a49454.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 23: https://loigiaihay.com/de-so-2-de-thi-vao-lop-10-mon-toan-c44a49464.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 24: https://loigiaihay.com/de-so-3-de-thi-vao-lop-10-mon-toan-c44a49465.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 25: https://loigiaihay.com/de-so-4-de-thi-vao-lop-10-mon-toan-c44a49466.html
+[2025-05-19T08:23:39.231+0000] {MathDag.py:32} INFO - Link 26: https://loigiaihay.com/de-so-5-de-thi-vao-lop-10-mon-toan-c44a49467.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 27: https://loigiaihay.com/de-so-6-de-thi-vao-lop-10-mon-toan-c44a49468.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 28: https://loigiaihay.com/de-so-7-de-thi-vao-lop-10-mon-toan-c44a49469.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 29: https://loigiaihay.com/de-so-8-de-thi-vao-lop-10-mon-toan-c44a49470.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 30: https://loigiaihay.com/de-so-9-de-thi-vao-lop-10-mon-toan-c44a49471.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 31: https://loigiaihay.com/de-so-10-de-thi-vao-lop-10-mon-toan-c44a49472.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 32: https://loigiaihay.com/de-so-11-de-thi-vao-lop-10-mon-toan-c44a49473.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 33: https://loigiaihay.com/de-so-12-de-thi-vao-lop-10-mon-toan-c44a49474.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 34: https://loigiaihay.com/de-so-13-de-thi-vao-lop-10-mon-toan-c44a49515.html
+[2025-05-19T08:23:39.232+0000] {MathDag.py:32} INFO - Link 35: https://loigiaihay.com/de-so-14-de-thi-vao-lop-10-mon-toan-c44a49529.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 36: https://loigiaihay.com/de-so-15-de-thi-vao-lop-10-mon-toan-c44a49531.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 37: https://loigiaihay.com/de-so-16-de-thi-vao-lop-10-mon-toan-c44a49533.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 38: https://loigiaihay.com/de-so-17-de-thi-vao-lop-10-mon-toan-c44a49536.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 39: https://loigiaihay.com/de-so-18-de-thi-vao-lop-10-mon-toan-c44a49538.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 40: https://loigiaihay.com/de-so-19-de-thi-vao-lop-10-mon-toan-c44a49540.html
+[2025-05-19T08:23:39.233+0000] {MathDag.py:32} INFO - Link 41: https://loigiaihay.com/de-so-20-de-thi-vao-lop-10-mon-toan-c44a49541.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 42: https://loigiaihay.com/de-so-21-de-thi-vao-lop-10-mon-toan-c44a49573.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 43: https://loigiaihay.com/de-so-22-de-thi-vao-lop-10-mon-toan-c44a49582.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 44: https://loigiaihay.com/de-so-23-de-thi-vao-lop-10-mon-toan-c44a49583.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 45: https://loigiaihay.com/de-so-24-de-thi-vao-lop-10-mon-toan-c44a49585.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 46: https://loigiaihay.com/de-so-25-de-thi-vao-lop-10-mon-toan-c44a49613.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 47: https://loigiaihay.com/de-so-26-de-thi-vao-lop-10-mon-toan-c44a49614.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 48: https://loigiaihay.com/de-so-27-de-thi-vao-lop-10-mon-toan-c44a49615.html
+[2025-05-19T08:23:39.234+0000] {MathDag.py:32} INFO - Link 49: https://loigiaihay.com/de-so-28-de-thi-vao-lop-10-mon-toan-c44a49616.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 50: https://loigiaihay.com/de-so-29-de-thi-vao-lop-10-mon-toan-c44a49621.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 51: https://loigiaihay.com/de-so-30-de-thi-vao-lop-10-mon-toan-c44a49629.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 52: https://loigiaihay.com/de-so-31-de-thi-vao-lop-10-mon-toan-c44a49640.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 53: https://loigiaihay.com/de-so-32-de-thi-vao-lop-10-mon-toan-c44a49639.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 54: https://loigiaihay.com/de-so-33-de-thi-vao-lop-10-mon-toan-c44a49641.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 55: https://loigiaihay.com/de-so-34-de-thi-vao-lop-10-mon-toan-c44a49643.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 56: https://loigiaihay.com/de-so-35-de-thi-vao-lop-10-mon-toan-c44a49644.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 57: https://loigiaihay.com/de-so-36-de-thi-vao-lop-10-mon-toan-c44a49645.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 58: https://loigiaihay.com/de-so-37-de-thi-vao-lop-10-mon-toan-c44a49646.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 59: https://loigiaihay.com/de-so-38-de-thi-vao-lop-10-mon-toan-c44a49647.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 60: https://loigiaihay.com/de-so-39-de-thi-vao-lop-10-mon-toan-c44a49648.html
+[2025-05-19T08:23:39.235+0000] {MathDag.py:32} INFO - Link 61: https://loigiaihay.com/de-so-40-de-thi-vao-lop-10-mon-toan-c44a49649.html
+[2025-05-19T08:23:39.236+0000] {MathDag.py:32} INFO - Link 62: https://loigiaihay.com/de-so-41-de-thi-vao-lop-10-mon-toan-c44a49650.html
+[2025-05-19T08:23:39.236+0000] {MathDag.py:32} INFO - Link 63: https://loigiaihay.com/de-so-42-de-thi-vao-lop-10-mon-toan-c44a49651.html
+[2025-05-19T08:23:39.236+0000] {MathDag.py:32} INFO - Link 64: https://loigiaihay.com/de-so-43-de-thi-vao-lop-10-mon-toan-c44a49652.html
+[2025-05-19T08:23:39.254+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T08:23:39.262+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=get_links, execution_date=20250519T082337, start_date=20250519T082338, end_date=20250519T082339
+[2025-05-19T08:23:39.283+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T08:23:39.303+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

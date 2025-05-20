@@ -1,0 +1,23 @@
+[2025-05-19T08:11:55.757+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T08:11:50.677035+00:00 [queued]>
+[2025-05-19T08:11:55.765+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T08:11:50.677035+00:00 [queued]>
+[2025-05-19T08:11:55.766+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:11:55.766+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T08:11:55.766+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:11:55.778+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): save_to_bigquery> on 2025-05-19 08:11:50.677035+00:00
+[2025-05-19T08:11:55.783+0000] {standard_task_runner.py:55} INFO - Started process 1321 to run task
+[2025-05-19T08:11:55.787+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'save_to_bigquery', 'manual__2025-05-19T08:11:50.677035+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpwul88az_']
+[2025-05-19T08:11:55.793+0000] {standard_task_runner.py:83} INFO - Job 17: Subtask save_to_bigquery
+[2025-05-19T08:11:55.847+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T08:11:50.677035+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T08:11:55.900+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=save_to_bigquery
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T08:11:50.677035+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T08:11:50.677035+00:00
+[2025-05-19T08:11:55.911+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T08:11:55.919+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=save_to_bigquery, execution_date=20250519T081150, start_date=20250519T081155, end_date=20250519T081155
+[2025-05-19T08:11:55.965+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T08:11:55.984+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

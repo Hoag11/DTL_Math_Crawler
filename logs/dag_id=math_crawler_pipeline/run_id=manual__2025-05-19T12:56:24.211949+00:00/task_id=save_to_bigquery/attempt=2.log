@@ -1,0 +1,149 @@
+[2025-05-19T13:16:20.494+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T12:56:24.211949+00:00 [queued]>
+[2025-05-19T13:16:20.508+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T12:56:24.211949+00:00 [queued]>
+[2025-05-19T13:16:20.509+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T13:16:20.509+0000] {taskinstance.py:1284} INFO - Starting attempt 2 of 4
+[2025-05-19T13:16:20.509+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T13:16:20.523+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): save_to_bigquery> on 2025-05-19 12:56:24.211949+00:00
+[2025-05-19T13:16:20.529+0000] {standard_task_runner.py:55} INFO - Started process 726 to run task
+[2025-05-19T13:16:20.533+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'save_to_bigquery', 'manual__2025-05-19T12:56:24.211949+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmp8vun_fzh']
+[2025-05-19T13:16:20.535+0000] {standard_task_runner.py:83} INFO - Job 98: Subtask save_to_bigquery
+[2025-05-19T13:16:20.594+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T12:56:24.211949+00:00 [running]> on host 11cd72090704
+[2025-05-19T13:16:20.654+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=save_to_bigquery
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T12:56:24.211949+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T12:56:24.211949+00:00
+[2025-05-19T13:16:21.594+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:21.594+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 1
+[2025-05-19T13:16:22.219+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:22.219+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 2
+[2025-05-19T13:16:22.734+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:22.735+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 3
+[2025-05-19T13:16:23.273+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:23.273+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 4
+[2025-05-19T13:16:23.811+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:23.811+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 5
+[2025-05-19T13:16:24.321+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:24.322+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 6
+[2025-05-19T13:16:24.816+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:24.816+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 7
+[2025-05-19T13:16:25.365+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:25.365+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 8
+[2025-05-19T13:16:26.131+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:26.131+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 9
+[2025-05-19T13:16:27.433+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:27.433+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 10
+[2025-05-19T13:16:28.483+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:28.483+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 11
+[2025-05-19T13:16:29.491+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:29.491+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 12
+[2025-05-19T13:16:30.068+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:30.069+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 13
+[2025-05-19T13:16:30.746+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:30.746+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 14
+[2025-05-19T13:16:31.236+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:31.237+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 15
+[2025-05-19T13:16:31.730+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:31.730+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 16
+[2025-05-19T13:16:32.257+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:32.258+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 17
+[2025-05-19T13:16:33.099+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:33.099+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 18
+[2025-05-19T13:16:33.644+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:33.644+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 19
+[2025-05-19T13:16:34.194+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:34.195+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 20
+[2025-05-19T13:16:34.683+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:34.683+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 21
+[2025-05-19T13:16:35.352+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:35.352+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 22
+[2025-05-19T13:16:35.944+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:35.945+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 23
+[2025-05-19T13:16:36.576+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:36.576+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 24
+[2025-05-19T13:16:37.071+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:37.072+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 25
+[2025-05-19T13:16:37.652+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:37.652+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 26
+[2025-05-19T13:16:38.270+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:38.271+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 27
+[2025-05-19T13:16:38.866+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:38.866+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 28
+[2025-05-19T13:16:39.386+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:39.387+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 29
+[2025-05-19T13:16:39.861+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:39.861+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 30
+[2025-05-19T13:16:40.370+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:40.370+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 31
+[2025-05-19T13:16:41.123+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:41.123+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 32
+[2025-05-19T13:16:41.972+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:41.972+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 33
+[2025-05-19T13:16:42.830+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:42.831+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 34
+[2025-05-19T13:16:43.388+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:43.389+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 35
+[2025-05-19T13:16:43.930+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:43.931+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 36
+[2025-05-19T13:16:44.506+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:44.506+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 37
+[2025-05-19T13:16:45.314+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:45.314+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 38
+[2025-05-19T13:16:45.901+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:45.901+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 39
+[2025-05-19T13:16:46.395+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:46.396+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 40
+[2025-05-19T13:16:47.098+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:47.098+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 41
+[2025-05-19T13:16:47.722+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:47.723+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 42
+[2025-05-19T13:16:48.276+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:48.276+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 43
+[2025-05-19T13:16:48.824+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:48.824+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 44
+[2025-05-19T13:16:49.576+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:49.576+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 45
+[2025-05-19T13:16:50.272+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:50.273+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 46
+[2025-05-19T13:16:51.044+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:51.044+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 47
+[2025-05-19T13:16:51.521+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:51.522+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 48
+[2025-05-19T13:16:52.127+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:52.127+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 49
+[2025-05-19T13:16:52.672+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:52.673+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 50
+[2025-05-19T13:16:53.187+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:53.187+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 51
+[2025-05-19T13:16:53.852+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:53.852+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 52
+[2025-05-19T13:16:54.397+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:54.397+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 53
+[2025-05-19T13:16:54.966+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:54.967+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 54
+[2025-05-19T13:16:55.678+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:55.678+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 55
+[2025-05-19T13:16:56.349+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:56.349+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 56
+[2025-05-19T13:16:56.814+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:56.814+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 57
+[2025-05-19T13:16:57.683+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:57.683+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 58
+[2025-05-19T13:16:58.393+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:58.393+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 59
+[2025-05-19T13:16:59.010+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:59.011+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 60
+[2025-05-19T13:16:59.523+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:16:59.523+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 61
+[2025-05-19T13:17:00.364+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:17:00.366+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 62
+[2025-05-19T13:17:01.368+0000] {MathCrawler.py:300} INFO - Inserted rows into BigQuery successfully.
+[2025-05-19T13:17:01.368+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 63
+[2025-05-19T13:17:01.370+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T13:17:01.383+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=save_to_bigquery, execution_date=20250519T125624, start_date=20250519T131620, end_date=20250519T131701
+[2025-05-19T13:17:01.405+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T13:17:01.419+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

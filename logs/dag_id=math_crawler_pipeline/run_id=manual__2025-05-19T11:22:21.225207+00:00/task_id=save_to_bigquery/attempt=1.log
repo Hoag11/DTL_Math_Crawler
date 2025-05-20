@@ -1,0 +1,128 @@
+[2025-05-19T12:03:46.520+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T11:22:21.225207+00:00 [queued]>
+[2025-05-19T12:03:46.533+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T11:22:21.225207+00:00 [queued]>
+[2025-05-19T12:03:46.534+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T12:03:46.534+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T12:03:46.534+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T12:03:46.549+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): save_to_bigquery> on 2025-05-19 11:22:21.225207+00:00
+[2025-05-19T12:03:46.558+0000] {standard_task_runner.py:55} INFO - Started process 1098 to run task
+[2025-05-19T12:03:46.562+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'save_to_bigquery', 'manual__2025-05-19T11:22:21.225207+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpbe7_pojw']
+[2025-05-19T12:03:46.565+0000] {standard_task_runner.py:83} INFO - Job 90: Subtask save_to_bigquery
+[2025-05-19T12:03:46.626+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T11:22:21.225207+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T12:03:46.691+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=save_to_bigquery
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T11:22:21.225207+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T11:22:21.225207+00:00
+[2025-05-19T12:03:49.729+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:03:52.734+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:03:55.738+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:03:55.739+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:03:55.740+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 1: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:03:58.745+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:01.749+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:04.753+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:04.753+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:04.753+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 2: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:07.758+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:10.762+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:13.767+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:13.768+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:13.768+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 3: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:16.772+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:19.781+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:22.786+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:22.787+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:22.787+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 4: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:25.788+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:28.793+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:31.797+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:31.798+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:31.798+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 5: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:34.802+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:37.811+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:40.816+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:40.817+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:40.817+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 6: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:43.822+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:46.827+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:49.831+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:49.832+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:49.832+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 7: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:04:52.835+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:04:55.841+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:04:58.845+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:04:58.847+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:04:58.848+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 8: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:01.853+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:04.856+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:07.860+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:07.861+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:07.861+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 9: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:10.866+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:13.872+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:16.877+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:16.878+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:16.878+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 10: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:19.883+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:22.887+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:25.893+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:25.895+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:25.896+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 11: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:28.902+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:31.904+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:34.905+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:34.905+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:34.906+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 12: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:37.910+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:40.914+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:43.919+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:43.919+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:43.920+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 13: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:46.925+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:49.930+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:05:52.935+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:05:52.935+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:05:52.935+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 14: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:05:55.940+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:05:58.945+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:01.949+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:01.950+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:01.950+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 15: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:04.955+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:07.957+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:10.962+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:10.963+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:10.963+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 16: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:13.969+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:16.972+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:19.976+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:19.976+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:19.976+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 17: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:22.981+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:25.982+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:28.983+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:28.983+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:28.984+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 18: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:31.988+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:34.994+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:37.996+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:37.997+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:37.998+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 19: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:41.002+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:44.006+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:47.011+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+[2025-05-19T12:06:47.012+0000] {_default.py:301} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2025-05-19T12:06:47.012+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 20: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2025-05-19T12:06:50.017+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2025-05-19T12:06:53.022+0000] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2025-05-19T12:06:53.313+0000] {local_task_job.py:82} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-05-19T12:06:53.317+0000] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1098. PIDs of all processes in the group: [1098]
+[2025-05-19T12:06:53.318+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 1098
+[2025-05-19T12:06:53.319+0000] {taskinstance.py:1483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-19T12:06:53.319+0000] {MathDag.py:75} ERROR - Lỗi lưu BigQuery cho link 21: Task received SIGTERM signal
+[2025-05-19T12:06:55.548+0000] {local_task_job.py:82} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-05-19T12:06:55.551+0000] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 1098. PIDs of all processes in the group: [1098]

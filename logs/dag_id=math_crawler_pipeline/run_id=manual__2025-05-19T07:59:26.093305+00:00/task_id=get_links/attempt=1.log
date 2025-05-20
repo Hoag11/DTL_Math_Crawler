@@ -1,0 +1,30 @@
+[2025-05-19T07:59:27.752+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:59:26.093305+00:00 [queued]>
+[2025-05-19T07:59:27.759+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:59:26.093305+00:00 [queued]>
+[2025-05-19T07:59:27.760+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T07:59:27.760+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T07:59:27.760+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T07:59:27.770+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): get_links> on 2025-05-19 07:59:26.093305+00:00
+[2025-05-19T07:59:27.775+0000] {standard_task_runner.py:55} INFO - Started process 985 to run task
+[2025-05-19T07:59:27.778+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'get_links', 'manual__2025-05-19T07:59:26.093305+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpl3ketk3v']
+[2025-05-19T07:59:27.781+0000] {standard_task_runner.py:83} INFO - Job 9: Subtask get_links
+[2025-05-19T07:59:27.846+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.get_links manual__2025-05-19T07:59:26.093305+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T07:59:27.900+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=get_links
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T07:59:26.093305+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T07:59:26.093305+00:00
+[2025-05-19T07:59:27.901+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: get_links() missing 1 required positional argument: 'main_url'
+[2025-05-19T07:59:27.908+0000] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=math_crawler_pipeline, task_id=get_links, execution_date=20250519T075926, start_date=20250519T075927, end_date=20250519T075927
+[2025-05-19T07:59:27.919+0000] {standard_task_runner.py:100} ERROR - Failed to execute job 9 for task get_links (get_links() missing 1 required positional argument: 'main_url'; 985)
+[2025-05-19T07:59:27.956+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2025-05-19T07:59:27.975+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

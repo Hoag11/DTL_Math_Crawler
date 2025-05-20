@@ -1,0 +1,19 @@
+[2025-05-19T13:13:37.366+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T12:56:24.211949+00:00 [queued]>
+[2025-05-19T13:13:37.377+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T12:56:24.211949+00:00 [queued]>
+[2025-05-19T13:13:37.377+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T13:13:37.378+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T13:13:37.378+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T13:13:37.392+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): generate_pdf> on 2025-05-19 12:56:24.211949+00:00
+[2025-05-19T13:13:37.398+0000] {standard_task_runner.py:55} INFO - Started process 651 to run task
+[2025-05-19T13:13:37.401+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'generate_pdf', 'manual__2025-05-19T12:56:24.211949+00:00', '--job-id', '96', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmp1uwza7jv']
+[2025-05-19T13:13:37.404+0000] {standard_task_runner.py:83} INFO - Job 96: Subtask generate_pdf
+[2025-05-19T13:13:37.456+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.generate_pdf manual__2025-05-19T12:56:24.211949+00:00 [running]> on host 11cd72090704
+[2025-05-19T13:13:37.513+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=generate_pdf
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T12:56:24.211949+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T12:56:24.211949+00:00

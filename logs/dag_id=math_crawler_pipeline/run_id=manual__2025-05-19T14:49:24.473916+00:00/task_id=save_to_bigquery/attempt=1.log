@@ -1,0 +1,151 @@
+[2025-05-19T15:16:51.245+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T14:49:24.473916+00:00 [queued]>
+[2025-05-19T15:16:51.256+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T14:49:24.473916+00:00 [queued]>
+[2025-05-19T15:16:51.257+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T15:16:51.257+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T15:16:51.258+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T15:16:51.273+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): save_to_bigquery> on 2025-05-19 14:49:24.473916+00:00
+[2025-05-19T15:16:51.278+0000] {standard_task_runner.py:55} INFO - Started process 429 to run task
+[2025-05-19T15:16:51.282+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'save_to_bigquery', 'manual__2025-05-19T14:49:24.473916+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpe4v2pll7']
+[2025-05-19T15:16:51.284+0000] {standard_task_runner.py:83} INFO - Job 105: Subtask save_to_bigquery
+[2025-05-19T15:16:51.342+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.save_to_bigquery manual__2025-05-19T14:49:24.473916+00:00 [running]> on host 11cd72090704
+[2025-05-19T15:16:51.393+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=save_to_bigquery
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T14:49:24.473916+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T14:49:24.473916+00:00
+[2025-05-19T15:16:52.364+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:52.364+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 1
+[2025-05-19T15:16:52.954+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:52.954+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 2
+[2025-05-19T15:16:53.467+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:53.467+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 3
+[2025-05-19T15:16:53.994+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:53.994+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 4
+[2025-05-19T15:16:54.491+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:54.491+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 5
+[2025-05-19T15:16:54.985+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:54.985+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 6
+[2025-05-19T15:16:55.466+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:55.466+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 7
+[2025-05-19T15:16:55.977+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:55.977+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 8
+[2025-05-19T15:16:56.447+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:56.448+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 9
+[2025-05-19T15:16:56.919+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:56.919+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 10
+[2025-05-19T15:16:57.730+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:57.731+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 11
+[2025-05-19T15:16:58.243+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:58.244+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 12
+[2025-05-19T15:16:58.712+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:58.712+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 13
+[2025-05-19T15:16:59.207+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:59.207+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 14
+[2025-05-19T15:16:59.732+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:16:59.732+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 15
+[2025-05-19T15:17:00.255+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:00.255+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 16
+[2025-05-19T15:17:00.741+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:00.742+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 17
+[2025-05-19T15:17:01.249+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:01.249+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 18
+[2025-05-19T15:17:01.738+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:01.738+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 19
+[2025-05-19T15:17:02.231+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:02.231+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 20
+[2025-05-19T15:17:02.785+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:02.786+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 21
+[2025-05-19T15:17:03.297+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:03.297+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 22
+[2025-05-19T15:17:03.741+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:03.741+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 23
+[2025-05-19T15:17:04.185+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:04.185+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 24
+[2025-05-19T15:17:04.622+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:04.622+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 25
+[2025-05-19T15:17:05.187+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:05.187+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 26
+[2025-05-19T15:17:05.652+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:05.652+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 27
+[2025-05-19T15:17:06.164+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:06.165+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 28
+[2025-05-19T15:17:06.638+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:06.638+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 29
+[2025-05-19T15:17:07.104+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:07.105+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 30
+[2025-05-19T15:17:07.598+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:07.598+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 31
+[2025-05-19T15:17:08.048+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:08.049+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 32
+[2025-05-19T15:17:08.507+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:08.507+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 33
+[2025-05-19T15:17:08.950+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:08.950+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 34
+[2025-05-19T15:17:09.430+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:09.430+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 35
+[2025-05-19T15:17:09.900+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:09.900+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 36
+[2025-05-19T15:17:10.363+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:10.363+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 37
+[2025-05-19T15:17:10.838+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:10.838+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 38
+[2025-05-19T15:17:11.299+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:11.302+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 39
+[2025-05-19T15:17:11.796+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:11.797+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 40
+[2025-05-19T15:17:12.265+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:12.265+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 41
+[2025-05-19T15:17:12.728+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:12.728+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 42
+[2025-05-19T15:17:13.230+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:13.230+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 43
+[2025-05-19T15:17:13.701+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:13.702+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 44
+[2025-05-19T15:17:14.177+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:14.177+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 45
+[2025-05-19T15:17:14.635+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:14.635+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 46
+[2025-05-19T15:17:15.109+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:15.109+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 47
+[2025-05-19T15:17:15.572+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:15.573+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 48
+[2025-05-19T15:17:16.054+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:16.054+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 49
+[2025-05-19T15:17:16.513+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:16.513+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 50
+[2025-05-19T15:17:17.019+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:17.019+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 51
+[2025-05-19T15:17:17.539+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:17.540+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 52
+[2025-05-19T15:17:18.026+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:18.027+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 53
+[2025-05-19T15:17:18.498+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:18.498+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 54
+[2025-05-19T15:17:18.936+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:18.936+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 55
+[2025-05-19T15:17:19.371+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:19.372+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 56
+[2025-05-19T15:17:19.887+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:19.887+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 57
+[2025-05-19T15:17:20.377+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:20.377+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 58
+[2025-05-19T15:17:20.910+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:20.910+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 59
+[2025-05-19T15:17:21.423+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:21.423+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 60
+[2025-05-19T15:17:21.912+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:21.913+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 61
+[2025-05-19T15:17:22.374+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:22.375+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 62
+[2025-05-19T15:17:22.847+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:22.848+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 63
+[2025-05-19T15:17:23.369+0000] {MathCrawler.py:320} INFO - Thêm dòng thành công vào BigQuery.
+[2025-05-19T15:17:23.369+0000] {MathDag.py:73} INFO - Đã lưu BigQuery cho link 64
+[2025-05-19T15:17:23.371+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T15:17:23.384+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=save_to_bigquery, execution_date=20250519T144924, start_date=20250519T151651, end_date=20250519T151723
+[2025-05-19T15:17:23.446+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T15:17:23.457+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2025-05-19T08:22:35.932+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T08:22:33.005421+00:00 [queued]>
+[2025-05-19T08:22:35.945+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T08:22:33.005421+00:00 [queued]>
+[2025-05-19T08:22:35.945+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:22:35.946+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T08:22:35.946+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T08:22:35.959+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_problem_and_solution> on 2025-05-19 08:22:33.005421+00:00
+[2025-05-19T08:22:35.964+0000] {standard_task_runner.py:55} INFO - Started process 1611 to run task
+[2025-05-19T08:22:35.968+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'extract_problem_and_solution', 'manual__2025-05-19T08:22:33.005421+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpijti1x2p']
+[2025-05-19T08:22:35.971+0000] {standard_task_runner.py:83} INFO - Job 24: Subtask extract_problem_and_solution
+[2025-05-19T08:22:36.046+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T08:22:33.005421+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T08:22:36.106+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=extract_problem_and_solution
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T08:22:33.005421+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T08:22:33.005421+00:00
+[2025-05-19T08:22:36.118+0000] {MathDag.py:41} WARNING - Không có link nào để crawl!
+[2025-05-19T08:22:36.119+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T08:22:36.128+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=extract_problem_and_solution, execution_date=20250519T082233, start_date=20250519T082235, end_date=20250519T082236
+[2025-05-19T08:22:36.188+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T08:22:36.211+0000] {taskinstance.py:2582} INFO - 2 downstream tasks scheduled from follow-on schedule check

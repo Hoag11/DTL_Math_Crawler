@@ -1,0 +1,78 @@
+x-airflow-common:
+  &airflow-common
+  build:
+    context: .
+    dockerfile: Dockerfile
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__WEBSERVER__SECRET_KEY: 'a3f5e67c8b9a0d1e2f3a4b5c6d7e8f9'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    SELENIUM__URL: http://chrome:4444/wd/hub
+    GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/creds/tensile-cogency-408304-6555a3d7645b.json
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - ./output:/opt/airflow/output
+    - ./fonts:/opt/airflow/fonts
+    - ./creds:/opt/airflow/creds
+
+  depends_on:
+    postgres:
+      condition: service_healthy
+    chrome:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: always
+
+  chrome:
+    image: selenium/standalone-chrome
+    ports:
+      - "4444:4444"
+    healthcheck:
+      test: ["CMD-SHELL", "curl http://localhost:4444/wd/hub || exit 1"]
+      interval: 30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+    restart: always
+
+  webserver:
+    <<: *airflow-common
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command: >
+      bash -c "
+      airflow db upgrade &&
+      airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com &&
+      airflow webserver"
+    restart: always
+
+  scheduler:
+    <<: *airflow-common
+    command: >
+      bash -c "airflow scheduler"
+    restart: always
+
+volumes:
+  postgres_data:

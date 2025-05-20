@@ -1,0 +1,20 @@
+[2025-05-19T09:53:19.390+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T09:23:32.331846+00:00 [queued]>
+[2025-05-19T09:53:19.413+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T09:23:32.331846+00:00 [queued]>
+[2025-05-19T09:53:19.413+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T09:53:19.413+0000] {taskinstance.py:1284} INFO - Starting attempt 3 of 3
+[2025-05-19T09:53:19.414+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T09:53:19.457+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_problem_and_solution> on 2025-05-19 09:23:32.331846+00:00
+[2025-05-19T09:53:19.468+0000] {standard_task_runner.py:55} INFO - Started process 183 to run task
+[2025-05-19T09:53:19.473+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'extract_problem_and_solution', 'manual__2025-05-19T09:23:32.331846+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmpdx38j6pu']
+[2025-05-19T09:53:19.478+0000] {standard_task_runner.py:83} INFO - Job 48: Subtask extract_problem_and_solution
+[2025-05-19T09:53:19.558+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T09:23:32.331846+00:00 [running]> on host 23e48ed0cd15
+[2025-05-19T09:53:19.631+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=extract_problem_and_solution
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T09:23:32.331846+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T09:23:32.331846+00:00
+[2025-05-19T09:53:19.650+0000] {MathDag.py:45} INFO - Đang crawl link 1/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-a179519.html

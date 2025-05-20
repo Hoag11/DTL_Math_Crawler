@@ -1,0 +1,151 @@
+[2025-05-19T16:30:46.087+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T16:30:42.437473+00:00 [queued]>
+[2025-05-19T16:30:46.097+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T16:30:42.437473+00:00 [queued]>
+[2025-05-19T16:30:46.097+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T16:30:46.097+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 3
+[2025-05-19T16:30:46.097+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-05-19T16:30:46.109+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): extract_problem_and_solution> on 2025-05-19 16:30:42.437473+00:00
+[2025-05-19T16:30:46.116+0000] {standard_task_runner.py:55} INFO - Started process 2013 to run task
+[2025-05-19T16:30:46.119+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'math_crawler_pipeline', 'extract_problem_and_solution', 'manual__2025-05-19T16:30:42.437473+00:00', '--job-id', '108', '--raw', '--subdir', 'DAGS_FOLDER/MathDag.py', '--cfg-path', '/tmp/tmphtyesyep']
+[2025-05-19T16:30:46.121+0000] {standard_task_runner.py:83} INFO - Job 108: Subtask extract_problem_and_solution
+[2025-05-19T16:30:46.189+0000] {task_command.py:389} INFO - Running <TaskInstance: math_crawler_pipeline.extract_problem_and_solution manual__2025-05-19T16:30:42.437473+00:00 [running]> on host 11cd72090704
+[2025-05-19T16:30:46.276+0000] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=math_crawler_pipeline
+AIRFLOW_CTX_TASK_ID=extract_problem_and_solution
+AIRFLOW_CTX_EXECUTION_DATE=2025-05-19T16:30:42.437473+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-05-19T16:30:42.437473+00:00
+[2025-05-19T16:30:46.286+0000] {MathDag.py:45} INFO - Đang crawl link 1/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-a179519.html
+[2025-05-19T16:30:56.838+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 195
+[2025-05-19T16:30:56.839+0000] {MathDag.py:45} INFO - Đang crawl link 2/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-2-a179539.html
+[2025-05-19T16:31:07.639+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 208
+[2025-05-19T16:31:07.639+0000] {MathDag.py:45} INFO - Đang crawl link 3/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-ha-noi-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-3-a181097.html
+[2025-05-19T16:31:19.662+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 217
+[2025-05-19T16:31:19.663+0000] {MathDag.py:45} INFO - Đang crawl link 4/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-4-a181870.html
+[2025-05-19T16:31:30.623+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 188
+[2025-05-19T16:31:30.624+0000] {MathDag.py:45} INFO - Đang crawl link 5/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-5-a182059.html
+[2025-05-19T16:31:36.125+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:31:36.125+0000] {MathDag.py:45} INFO - Đang crawl link 6/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-6-a182290.html
+[2025-05-19T16:31:45.686+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 186
+[2025-05-19T16:31:45.686+0000] {MathDag.py:45} INFO - Đang crawl link 7/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-7-a182562.html
+[2025-05-19T16:31:55.617+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 170
+[2025-05-19T16:31:55.618+0000] {MathDag.py:45} INFO - Đang crawl link 8/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-8-a183073.html
+[2025-05-19T16:32:06.006+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 171
+[2025-05-19T16:32:06.006+0000] {MathDag.py:45} INFO - Đang crawl link 9/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-9-a183564.html
+[2025-05-19T16:32:17.247+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 170
+[2025-05-19T16:32:17.247+0000] {MathDag.py:45} INFO - Đang crawl link 10/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-10-a183809.html
+[2025-05-19T16:32:27.378+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 170
+[2025-05-19T16:32:27.378+0000] {MathDag.py:45} INFO - Đang crawl link 11/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-ha-noi-nam-2025-de-so-11-a184285.html
+[2025-05-19T16:32:37.580+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 162
+[2025-05-19T16:32:37.581+0000] {MathDag.py:45} INFO - Đang crawl link 12/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-toan-tp-ho-chi-minh-nam-2025-co-dap-an-va-loi-giai-chi-tiet-de-1-a179544.html
+[2025-05-19T16:32:48.066+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 207
+[2025-05-19T16:32:48.067+0000] {MathDag.py:45} INFO - Đang crawl link 13/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-2-a181829.html
+[2025-05-19T16:32:59.158+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 226
+[2025-05-19T16:32:59.158+0000] {MathDag.py:45} INFO - Đang crawl link 14/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-3-a181884.html
+[2025-05-19T16:33:09.163+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 191
+[2025-05-19T16:33:09.164+0000] {MathDag.py:45} INFO - Đang crawl link 15/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-4-a181981.html
+[2025-05-19T16:33:19.444+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 237
+[2025-05-19T16:33:19.444+0000] {MathDag.py:45} INFO - Đang crawl link 16/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-5-a182269.html
+[2025-05-19T16:33:29.348+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 246
+[2025-05-19T16:33:29.348+0000] {MathDag.py:45} INFO - Đang crawl link 17/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-6-a182568.html
+[2025-05-19T16:33:42.320+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 249
+[2025-05-19T16:33:42.320+0000] {MathDag.py:45} INFO - Đang crawl link 18/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-7-a182986.html
+[2025-05-19T16:33:51.681+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 199
+[2025-05-19T16:33:51.681+0000] {MathDag.py:45} INFO - Đang crawl link 19/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-8-a183544.html
+[2025-05-19T16:34:01.535+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 218
+[2025-05-19T16:34:01.535+0000] {MathDag.py:45} INFO - Đang crawl link 20/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-9-a184122.html
+[2025-05-19T16:34:11.164+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 208
+[2025-05-19T16:34:11.165+0000] {MathDag.py:45} INFO - Đang crawl link 21/64: https://loigiaihay.com/de-tham-khao-thi-vao-10-mon-toan-tp-ho-chi-minh-nam-2025-de-so-10-a184527.html
+[2025-05-19T16:34:20.866+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 191
+[2025-05-19T16:34:20.866+0000] {MathDag.py:45} INFO - Đang crawl link 22/64: https://loigiaihay.com/de-so-1-de-thi-vao-lop-10-mon-toan-c44a49454.html
+[2025-05-19T16:34:30.879+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:34:30.879+0000] {MathDag.py:45} INFO - Đang crawl link 23/64: https://loigiaihay.com/de-so-2-de-thi-vao-lop-10-mon-toan-c44a49464.html
+[2025-05-19T16:34:41.479+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:34:41.479+0000] {MathDag.py:45} INFO - Đang crawl link 24/64: https://loigiaihay.com/de-so-3-de-thi-vao-lop-10-mon-toan-c44a49465.html
+[2025-05-19T16:34:51.771+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:34:51.772+0000] {MathDag.py:45} INFO - Đang crawl link 25/64: https://loigiaihay.com/de-so-4-de-thi-vao-lop-10-mon-toan-c44a49466.html
+[2025-05-19T16:35:02.811+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:35:02.812+0000] {MathDag.py:45} INFO - Đang crawl link 26/64: https://loigiaihay.com/de-so-5-de-thi-vao-lop-10-mon-toan-c44a49467.html
+[2025-05-19T16:35:17.778+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:35:17.779+0000] {MathDag.py:45} INFO - Đang crawl link 27/64: https://loigiaihay.com/de-so-6-de-thi-vao-lop-10-mon-toan-c44a49468.html
+[2025-05-19T16:35:33.043+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:35:33.046+0000] {MathDag.py:45} INFO - Đang crawl link 28/64: https://loigiaihay.com/de-so-7-de-thi-vao-lop-10-mon-toan-c44a49469.html
+[2025-05-19T16:35:43.002+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:35:43.002+0000] {MathDag.py:45} INFO - Đang crawl link 29/64: https://loigiaihay.com/de-so-8-de-thi-vao-lop-10-mon-toan-c44a49470.html
+[2025-05-19T16:35:51.288+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:35:51.288+0000] {MathDag.py:45} INFO - Đang crawl link 30/64: https://loigiaihay.com/de-so-9-de-thi-vao-lop-10-mon-toan-c44a49471.html
+[2025-05-19T16:36:01.477+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:01.478+0000] {MathDag.py:45} INFO - Đang crawl link 31/64: https://loigiaihay.com/de-so-10-de-thi-vao-lop-10-mon-toan-c44a49472.html
+[2025-05-19T16:36:12.682+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:12.683+0000] {MathDag.py:45} INFO - Đang crawl link 32/64: https://loigiaihay.com/de-so-11-de-thi-vao-lop-10-mon-toan-c44a49473.html
+[2025-05-19T16:36:23.109+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:23.112+0000] {MathDag.py:45} INFO - Đang crawl link 33/64: https://loigiaihay.com/de-so-12-de-thi-vao-lop-10-mon-toan-c44a49474.html
+[2025-05-19T16:36:33.640+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:33.641+0000] {MathDag.py:45} INFO - Đang crawl link 34/64: https://loigiaihay.com/de-so-13-de-thi-vao-lop-10-mon-toan-c44a49515.html
+[2025-05-19T16:36:42.996+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:42.997+0000] {MathDag.py:45} INFO - Đang crawl link 35/64: https://loigiaihay.com/de-so-14-de-thi-vao-lop-10-mon-toan-c44a49529.html
+[2025-05-19T16:36:53.742+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:36:53.742+0000] {MathDag.py:45} INFO - Đang crawl link 36/64: https://loigiaihay.com/de-so-15-de-thi-vao-lop-10-mon-toan-c44a49531.html
+[2025-05-19T16:37:06.287+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:06.288+0000] {MathDag.py:45} INFO - Đang crawl link 37/64: https://loigiaihay.com/de-so-16-de-thi-vao-lop-10-mon-toan-c44a49533.html
+[2025-05-19T16:37:18.743+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:18.743+0000] {MathDag.py:45} INFO - Đang crawl link 38/64: https://loigiaihay.com/de-so-17-de-thi-vao-lop-10-mon-toan-c44a49536.html
+[2025-05-19T16:37:28.309+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:28.310+0000] {MathDag.py:45} INFO - Đang crawl link 39/64: https://loigiaihay.com/de-so-18-de-thi-vao-lop-10-mon-toan-c44a49538.html
+[2025-05-19T16:37:37.944+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:37.945+0000] {MathDag.py:45} INFO - Đang crawl link 40/64: https://loigiaihay.com/de-so-19-de-thi-vao-lop-10-mon-toan-c44a49540.html
+[2025-05-19T16:37:45.732+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:45.732+0000] {MathDag.py:45} INFO - Đang crawl link 41/64: https://loigiaihay.com/de-so-20-de-thi-vao-lop-10-mon-toan-c44a49541.html
+[2025-05-19T16:37:54.805+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:37:54.809+0000] {MathDag.py:45} INFO - Đang crawl link 42/64: https://loigiaihay.com/de-so-21-de-thi-vao-lop-10-mon-toan-c44a49573.html
+[2025-05-19T16:38:07.667+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:07.668+0000] {MathDag.py:45} INFO - Đang crawl link 43/64: https://loigiaihay.com/de-so-22-de-thi-vao-lop-10-mon-toan-c44a49582.html
+[2025-05-19T16:38:18.178+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:18.178+0000] {MathDag.py:45} INFO - Đang crawl link 44/64: https://loigiaihay.com/de-so-23-de-thi-vao-lop-10-mon-toan-c44a49583.html
+[2025-05-19T16:38:27.860+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:27.860+0000] {MathDag.py:45} INFO - Đang crawl link 45/64: https://loigiaihay.com/de-so-24-de-thi-vao-lop-10-mon-toan-c44a49585.html
+[2025-05-19T16:38:37.483+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:37.484+0000] {MathDag.py:45} INFO - Đang crawl link 46/64: https://loigiaihay.com/de-so-25-de-thi-vao-lop-10-mon-toan-c44a49613.html
+[2025-05-19T16:38:47.865+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:47.866+0000] {MathDag.py:45} INFO - Đang crawl link 47/64: https://loigiaihay.com/de-so-26-de-thi-vao-lop-10-mon-toan-c44a49614.html
+[2025-05-19T16:38:58.469+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:38:58.470+0000] {MathDag.py:45} INFO - Đang crawl link 48/64: https://loigiaihay.com/de-so-27-de-thi-vao-lop-10-mon-toan-c44a49615.html
+[2025-05-19T16:39:08.918+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:39:08.919+0000] {MathDag.py:45} INFO - Đang crawl link 49/64: https://loigiaihay.com/de-so-28-de-thi-vao-lop-10-mon-toan-c44a49616.html
+[2025-05-19T16:39:20.470+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:39:20.471+0000] {MathDag.py:45} INFO - Đang crawl link 50/64: https://loigiaihay.com/de-so-29-de-thi-vao-lop-10-mon-toan-c44a49621.html
+[2025-05-19T16:39:31.831+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:39:31.831+0000] {MathDag.py:45} INFO - Đang crawl link 51/64: https://loigiaihay.com/de-so-30-de-thi-vao-lop-10-mon-toan-c44a49629.html
+[2025-05-19T16:39:42.651+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:39:42.652+0000] {MathDag.py:45} INFO - Đang crawl link 52/64: https://loigiaihay.com/de-so-31-de-thi-vao-lop-10-mon-toan-c44a49640.html
+[2025-05-19T16:39:57.650+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:39:57.651+0000] {MathDag.py:45} INFO - Đang crawl link 53/64: https://loigiaihay.com/de-so-32-de-thi-vao-lop-10-mon-toan-c44a49639.html
+[2025-05-19T16:40:06.306+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:06.307+0000] {MathDag.py:45} INFO - Đang crawl link 54/64: https://loigiaihay.com/de-so-33-de-thi-vao-lop-10-mon-toan-c44a49641.html
+[2025-05-19T16:40:17.132+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:17.132+0000] {MathDag.py:45} INFO - Đang crawl link 55/64: https://loigiaihay.com/de-so-34-de-thi-vao-lop-10-mon-toan-c44a49643.html
+[2025-05-19T16:40:27.545+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:27.546+0000] {MathDag.py:45} INFO - Đang crawl link 56/64: https://loigiaihay.com/de-so-35-de-thi-vao-lop-10-mon-toan-c44a49644.html
+[2025-05-19T16:40:37.379+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:37.379+0000] {MathDag.py:45} INFO - Đang crawl link 57/64: https://loigiaihay.com/de-so-36-de-thi-vao-lop-10-mon-toan-c44a49645.html
+[2025-05-19T16:40:48.215+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:48.215+0000] {MathDag.py:45} INFO - Đang crawl link 58/64: https://loigiaihay.com/de-so-37-de-thi-vao-lop-10-mon-toan-c44a49646.html
+[2025-05-19T16:40:58.669+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:40:58.677+0000] {MathDag.py:45} INFO - Đang crawl link 59/64: https://loigiaihay.com/de-so-38-de-thi-vao-lop-10-mon-toan-c44a49647.html
+[2025-05-19T16:41:10.935+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:41:10.936+0000] {MathDag.py:45} INFO - Đang crawl link 60/64: https://loigiaihay.com/de-so-39-de-thi-vao-lop-10-mon-toan-c44a49648.html
+[2025-05-19T16:41:21.997+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:41:21.997+0000] {MathDag.py:45} INFO - Đang crawl link 61/64: https://loigiaihay.com/de-so-40-de-thi-vao-lop-10-mon-toan-c44a49649.html
+[2025-05-19T16:41:31.882+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:41:31.882+0000] {MathDag.py:45} INFO - Đang crawl link 62/64: https://loigiaihay.com/de-so-41-de-thi-vao-lop-10-mon-toan-c44a49650.html
+[2025-05-19T16:41:41.627+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:41:41.628+0000] {MathDag.py:45} INFO - Đang crawl link 63/64: https://loigiaihay.com/de-so-42-de-thi-vao-lop-10-mon-toan-c44a49651.html
+[2025-05-19T16:41:52.881+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:41:52.882+0000] {MathDag.py:45} INFO - Đang crawl link 64/64: https://loigiaihay.com/de-so-43-de-thi-vao-lop-10-mon-toan-c44a49652.html
+[2025-05-19T16:42:02.166+0000] {MathDag.py:47} INFO -   -> Crawl thành công, số block: 2
+[2025-05-19T16:42:02.224+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-05-19T16:42:02.244+0000] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=math_crawler_pipeline, task_id=extract_problem_and_solution, execution_date=20250519T163042, start_date=20250519T163046, end_date=20250519T164202
+[2025-05-19T16:42:02.288+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-05-19T16:42:02.705+0000] {taskinstance.py:2582} INFO - 2 downstream tasks scheduled from follow-on schedule check

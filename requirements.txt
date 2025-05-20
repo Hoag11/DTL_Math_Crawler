@@ -1,0 +1,8 @@
+google-cloud-bigquery
+bs4
+requests
+pandas
+fpdf2
+matplotlib
+cairosvg
+selenium
